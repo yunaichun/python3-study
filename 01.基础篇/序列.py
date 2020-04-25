@@ -30,3 +30,12 @@ print(type(zodiac_days))
 zodiac_day = filter(lambda x: x <= (month, day), zodiac_days)
 zodiac_len = len(list(zodiac_day)) % 12
 print(zodiac_name[zodiac_len])
+
+
+# 序列其他做操
+tup = (3, 2, 3, 7, 8, 1)
+tup.count(3) # 统计 3 出现的次数
+tup.index(7) # 统计 7 的 index
+list(reversed(tup)) # reversed() 和 sorted() 同样表示对列表 / 元组进行倒转和排序
+sorted(tup) # 但是会返回一个倒转后 或者排好序的新的列表 / 元组
+print(sorted(tup)) # list.reverse() 和 list.sort() 分别表示原地倒转列表和排序(注意，元组没有内置的这两个 函数)。

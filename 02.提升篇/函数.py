@@ -20,23 +20,6 @@ def func():
 func()
 print(var1)
 
-# 函数的迭代器
-list1 = [1, 2, 3]
-it = iter(list1)
-print(next(it))
-print(next(it))
-print(next(it))
-# print(next(it))
-
-# 函数的生成器
-def frange(start, end, step):
-    x = start
-    while x < end:
-        yield x
-        x += step
-for i in frange(10, 20, 0.5):
-    print(i)
-
 # lambda 表达式
 def true():return True # 等价于 lambda: True;
 def add(a, b):return a+b # 等价于 lambda a,b: a+b

@@ -1,3 +1,8 @@
+d = {'mike': 10, 'lucy': 2, 'ben': 30}
+print(d.items())
+sorted(d.items(), key = lambda x: x[1], reverse = True)
+
+
 chinese_zodiac = '猴鸡狗猪鼠牛虎兔龙蛇马羊'
 zodiac_name = (
     u'摩羯座', u'水瓶座', u'双鱼座', u'白羊座', u'金牛座', u'双子座',

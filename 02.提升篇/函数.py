@@ -57,39 +57,3 @@ for i in zip((1, 2, 3), (4, 5, 6)):
 adict = {'a': 11, 'b': 22}
 bdict = zip(adict.values(), adict.keys())
 print(dict(bdict))
-
-# 闭包
-def sum(a):
-    def add(b):
-        return a+b
-    return add
-print(sum(1)(2))
-def counter(FIRST=0):
-    cnt = [FIRST]
-    def add_one():
-        cnt[0] += 1
-        return cnt[0]
-    return add_one
-num1 = counter(5)
-print(num1())
-print(num1())
-def a_line(a, b):
-    return lambda x: a * x + b
-line1 = a_line(3, 5)
-print(line1(10))
-
-# 装饰器
-import time
-def timer(func):
-    def wrapper():
-        start_time = time.time()
-        func()
-        end_time = time.time()
-        print('函数运行了 %s 秒' %(end_time - start_time))
-    return wrapper
-@timer
-def i_can_sleep():
-    time.sleep(1)
-i_can_sleep()
-# num = timer(i_can_sleep)
-# num()

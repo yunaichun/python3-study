@@ -29,6 +29,12 @@ print(p.match('2018-5-10').group(1))
 print(p.match('2018-5-10').groups())
 (year, month, day) = p.match('2018-5-10').groups()
 print(year, month, day)
+# 搜索匹配
+print(p.search('aaaa2018-5-10bbbb'))
+# 替换匹配
+phone = '123-456-789 # 这是电话号码'
+p2 = re.sub(r'#.*', '', phone)
+print (p2)
 
 
 # 匹配空行 ^$

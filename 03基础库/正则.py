@@ -23,6 +23,8 @@ print(p.match('cat'))
 # 匹配2个或多个分支选择 |
 # 分组 ()
 print('\nx\n')
+#'r'是防止字符转义的, 如果路径中出现'\t'的话: 
+# 1、不加r的话\t就会被转义；2、而加了'r'之后'\t'就能保留原有的样子
 print(r'\nx\n')
 p = re.compile(r'(\d+)-(\d+)-(\d+)')
 print(p.match('2018-5-10').group(1))

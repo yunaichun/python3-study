@@ -21,7 +21,7 @@ print(bandWidth/radio)
 
 # 四、字符串操作
 chinese_zodiac = '猴鸡狗猪鼠牛虎兔龙蛇马羊'
-# 切片操作
+# 切片操作【截取操作 - python [::-1] 和 [-1] 用法: https://blog.csdn.net/HARDBIRD123/article/details/82261651】
 print(chinese_zodiac[0:4])
 # 负索引
 print(chinese_zodiac[-1])

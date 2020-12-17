@@ -1,8 +1,8 @@
-### 简介
+## 简介
 
 此项目是学习 python3 的项目，记录学习的点滴，方便以后忘记可以从学习轨迹中迅速上手。
 
-## 学习参考
+## 参考资料
 
 - [官方文档](https://docs.python.org/3/)
 - [零基础学 Python](https://time.geekbang.org/course/intro/100008801)
